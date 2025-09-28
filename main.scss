@@ -1,0 +1,198 @@
+// --------------------------------
+//-------- [ Start Components ] --------
+// --------------------------------
+
+@import "assets/scss/vars/vars";
+@import "assets/scss/vars/light";
+@import "assets/scss/vars/dark";
+@import "assets/scss/components/inputs";
+
+//-------- [ End Components ] --------
+
+// --------------------------------
+//-------- [ Start Fonts ] --------
+// --------------------------------
+@font-face {
+    font-family: 'en';
+    font-style: normal;
+    src: url(assets/fonts/din-regular.ttf);
+}
+@font-face {
+    font-family: 'num';
+    font-style: normal;
+    src: url(assets/fonts/AGENCYB.TTF);
+}
+  .font-en {
+    font-family: 'en';
+  }
+  @font-face {
+    font-family: 'ar';
+    font-style: normal;
+    src: url(assets/fonts/29ltbukraregular.ttf);
+  }
+    @font-face {
+    font-family: 'q';
+    font-style: normal;
+    src: url(assets/fonts/Qatar2022Arabic-Bold.ttf);
+  }
+//-------- [ End Fonts ] --------
+
+// --------------------------------
+//-------- [ Start Pages ] --------
+// --------------------------------
+
+@import "layout/layout";
+@import "services/services";
+@import "brands/brands";
+@import "contacts/contacts";
+@import "blog/blog";
+@import "faq/faq";
+@import "packges/packges";
+@import "about/about";
+
+//-------- [ End Pages ] --------
+
+// --------------------------------
+//-------- [ Start Global ] --------
+// --------------------------------
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'ar';
+    background-color: #FFF;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+.row {
+    overflow: hidden;
+}
+.container-fluid {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.container {
+    @media (min-width: 300px) {
+        max-width: 100%;
+    }
+    @media (min-width: 1440px) {
+        max-width: 1440px;
+    }
+}
+.row-inside-row {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-md-6,
+.col-md-3,
+.col-md-4,
+.col-md-8,
+.col-md-9,
+.col-sm-4,
+.col-sm-6 {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: unset;
+    &:hover {
+        color: unset;
+        text-decoration: unset;
+    }
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+    display: block;
+    position: relative;
+    .pretitle {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #009578;
+    }
+    h3 {
+        font-size: 3.5rem;
+        margin-bottom: 0;
+        font-weight: 700;
+        margin-top: 3px;
+        margin-bottom: 10px;
+        color: #0e3e2f;
+        span {
+            font-weight: 400;
+            color: $secondColor;
+        }
+        @media (max-width: $max-5) {
+            font-size: 2rem;
+        }
+    }
+    p {
+        display: flex;
+        align-items: center;
+        width: 60%;
+        margin: auto;
+        color: #515151;
+        font-weight: 500;
+        width: 600px;
+        margin: 0 auto 0 auto;
+        font-size: 0.9rem;
+        @media (max-width: $max-5) {
+            width: 100%;
+        }
+    }
+}
+
+//-------- [ End Global ] --------
+
+// --------------------------------
+//-------- [ Start Index ] --------
+// --------------------------------
+
+
+
+// index page
+.about {
+    padding: 100px 0;
+    background: #FFF;
+}
+
+
+
+@keyframes rotate{
+    from{ transform: rotate(360deg); }
+    to{ transform: rotate(-360deg); }
+}
+
+// Scroll Bar
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: linear-gradient(45deg, #f2fffc, #edf3ff);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #4d1f95 ; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #4d1f95; 
+}
