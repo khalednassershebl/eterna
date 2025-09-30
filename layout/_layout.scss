@@ -1313,7 +1313,6 @@
 }
 
 footer {
-        padding: 100px 0;
     .footer-container {
         .upper-footer {
             border: 1px solid #ebebeb;
@@ -1488,6 +1487,85 @@ footer {
                         fill: #FFF;
                         height: 16px;
                         width: 16px;
+                    }
+                }
+            }
+            .newsletter-form {
+                margin-top: 40px;
+                .search-input {
+                    height: 55px;
+                    padding: 12px 6px 12px 60px;
+                    background-color: transparent;
+                    border: 1px solid transparent;
+                    color: #000;
+                    transition: border-color 0.2s ease-in-out;
+                    font-size: 0.8rem;
+                    font-weight: 700;
+                    width: 99%;
+                    border-bottom: 1px solid #ebebeb;
+                    &:active {
+                        border-bottom: 1px solid #4d1f95;
+                        box-shadow: none;
+                        outline: none;
+                    }
+                    &:focus {
+                        border-bottom: 1px solid #4d1f95;
+                        box-shadow: none;
+                        outline: none;
+                    }
+                    &::placeholder {
+                        color: #646573;
+                        font-weight: 100;
+                        font-size: 0.75rem;
+                    }
+                }
+                .search-icon {
+                    button {
+                        position: absolute;
+                        left: 0px;
+                        top: 8px;
+                        border-radius: 12px;
+                        border: none;
+                        height: 40px;
+                        width: 40px;
+                        text-transform: uppercase;
+                        font-weight: 900;
+                        padding: 0 !important;
+                        background: unset;
+                        svg {
+                            height: 15px;
+                            width: 15px;
+                            fill: #000;
+                        }
+                    }
+                }
+            }
+        }
+        .copyrights {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 25px 20px;
+            p {
+                display: flex;
+                align-items: center;
+                font-size: 0.8rem;
+                font-weight: 700;
+                margin: 0;
+                span {
+                    margin: 0 5px;
+                    color: #4d1f95;
+                }
+            }
+            ul {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                li {
+                    margin: 0 10px;
+                    a {
+                        font-size: 0.8rem;
+                        font-weight: 700;
                     }
                 }
             }
