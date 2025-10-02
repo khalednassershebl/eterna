@@ -43,13 +43,13 @@
 // --------------------------------
 
 @import "layout/layout";
-@import "services/services";
-@import "brands/brands";
-@import "contacts/contacts";
-@import "blog/blog";
-@import "faq/faq";
-@import "packges/packges";
-@import "about/about";
+// @import "services/services";
+// @import "brands/brands";
+// @import "contacts/contacts";
+// @import "blog/blog";
+// @import "faq/faq";
+// @import "packges/packges";
+// @import "about/about";
 
 //-------- [ End Pages ] --------
 
@@ -365,7 +365,7 @@ a {
             .num-card-head {
                 height: 225px;
                 h2 {
-                    font-family: "DM Sans", sans-serif;
+                    font-family: "num", sans-serif;
                     font-weight: 700;
                     font-size: 5rem;
                 }
@@ -448,6 +448,25 @@ a {
                     margin: 0px 10px 14px;
                 }
             }
+            .project-arrow {
+                position: absolute;
+                bottom: 25px;
+                left: 30px;
+                height: 80px;
+                width: 80px;
+                border-radius: 50%;
+                background-color: #FFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                z-index: 10;
+                svg {
+                    height: 25px;
+                    width: 25px;
+                    fill: #000;
+                }
+            }
             h3 {
                 margin-top: 22px;
                 font-size: 1.1rem;
@@ -458,9 +477,216 @@ a {
     }
 }
 
-.about {
-    padding: 100px 0;
-    background: #FFF;
+.testimonilas {
+    padding: 0 0 100px 0;
+    .tes-container {
+        background: #f5f8fa;
+        padding: 75px 75px;
+        border-radius: 12px;
+        .tes-cards {
+            margin-top: 75px;
+            .tes-card {
+                background-color: #54008f;
+                padding:  40px 40px;
+                border-radius: 12px;
+                color: #FFF;
+                .test-scocre {
+                    display: inline-flex;
+                    align-items: baseline;
+                    justify-content: space-between;
+                    margin-bottom: 0;
+                    h3 {
+                        font-size: 3.1rem;
+                        font-weight: 700;
+                        margin: 0;
+                        font-family: "num";
+                    }
+                    span {
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                        margin: 0 5px;
+                        font-family: "num";
+                        color: #c2c2c2;
+                    }
+                    h4 {
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        margin: 0;
+                        font-family: "num";
+                        color: #c2c2c2;
+                    }
+                }
+                p.text {
+                    font-size: 0.8rem;
+                    line-height: 1.6;
+                    margin-bottom: 100px;
+                    color: #FFF;
+                    margin-top: 5px;
+                }
+                .tes-logo-container {
+                    position: relative;
+                    z-index: 10;
+                    width: 170px;
+                    @media (max-width: $max-12) {
+                        width: 150px;
+                    }
+                    @media (max-width: $max-9) {
+                        width: auto;
+                    }
+                    a {
+                        text-decoration: none;
+                        display: flex;
+                        align-items: center;
+                        vertical-align: middle;
+                    }
+                    img {
+                        max-width: 100%;
+                        height: 50px;
+                        margin-top: 0px;
+                        @media (max-width: $max-12) {
+                            height: 30px;
+                        }
+                    }
+                    span {
+                        color: #FFF;
+                        font-size: 0.5rem;
+                        margin-right: 8px;
+                        font-weight: 200;
+                    }
+                    .main-logo {
+                        display: block;
+                    }
+                    .img-dark {
+                        display: none;
+                    }
+                }
+                .tes-team {
+                    margin-top: 25px;
+                    img {
+                        transform: rotateY(180deg);
+                        width: 135px;
+                    }
+                }
+                .tes-stars {
+                    margin-top: 25px;
+                    img {
+                        width: 60px;
+                    }
+                    span {
+                        display: block;
+                        color: #c2c2c2;
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+        .review-card {
+                background-color: #FFF;
+                padding:  40px 40px;
+                border-radius: 12px;
+                color: #000;
+            .review-card-head {
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid #ebebeb;
+                padding-bottom: 25px;
+                figure {
+                    margin-bottom: 0;
+                    background: {
+                        size: cover;
+                        position: center center;
+                        repeat: no-repeat;
+                    }
+                    height: 70px;
+                    width: 70px;
+                    border-radius: 8px;
+                    margin-left: 25px;
+                }
+            }
+            .review-card-head-info {
+                h3 {
+                    font-size: 1rem;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                }
+                span {
+                    font-size: 0.85rem;
+                    color: #c2c2c2;
+                    font-weight: 500;
+                }
+            }
+            .review-card-content {
+                margin-top: 25px;
+                h4 {
+                    font-size: 1.1rem;
+                    font-weight: 700;
+                    margin-bottom: 40px;
+                    line-height: 1.6;
+                }
+                p {
+                    font-size: 1rem;
+                    line-height: 1.6;
+                    color: #515151;
+                    margin: 0;
+                }
+                .q-icon {
+                    color: #4d1f95;
+                    margin-right: 8px;
+                    margin-top: -20px;
+                    font-size: 5rem;
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+    }
+}
+
+.blog {
+    padding: 0px 0 100px 0;
+    .blog-container {
+        margin-top: 75px;
+        .blog-card {
+            figure {
+                height: 250px;
+                width: 100%;
+                border-radius: 12px;
+                position: relative;
+                background: {
+                    size: cover;
+                    position: center center;
+                    repeat: no-repeat;
+                };
+                margin-bottom: 0;
+            }
+            .blog-cat {
+                font-size: 0.75rem;
+                background-color: #FFF;
+                color: #646573;
+                display: inline-flex;
+                align-items: center;
+                border-radius: 8px;
+                padding: 1px 0px 0px 0px;
+                padding-right: 10px;
+                span {
+                    font-weight: 600;
+                }
+                h4 {
+                    margin: 0px 10px 14px;
+                }
+            }
+            h3 {
+                margin-top: 0;
+                font-size: 1.1rem;
+                font-weight: 700;
+                padding-right: 10px;
+                line-height: 1.6;
+            }
+            p {
+                font-size: 0.9rem;
+                color: #515151;
+            }
+        }
+    }
 }
 
 
