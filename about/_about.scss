@@ -1,0 +1,232 @@
+.about-page {
+    .why {
+        padding: 100px 0;
+        @media (max-width: $max-5) {
+            padding: 75px 0;
+        }
+        .why-info {
+            border-top: 1px dashed #CACACA;
+            border-bottom: 1px dashed #CACACA;
+            @media (max-width: $max-9) {
+                border: unset;
+            }
+            .why-part {
+                .why-text {
+                    padding: 50px 25px 50px 50px;
+                    .pretitle {
+                        font-size: 1rem;
+                        font-weight: 600;
+                        color: $secondColor;
+                        @media (max-width: $max-5) {
+                            font-size: 0.9rem;
+                        }
+                    }
+                    .why-heading {
+                        font-size: 2.75rem;
+                        font-weight: 600;
+                        margin-top: 9px;
+                        color: #0e3e2f;
+                        @media (max-width: $max-12) {
+                            font-size: 2rem;
+                        }
+                        @media (max-width: $max-5) {
+                            font-size: 1.5rem;
+                        }
+                    }
+                    .text {
+                        color: #0e3e2f;
+                        width: 80%;
+                        margin-top: 35px;
+                        font-size: 1rem;
+                        @media (max-width: $max-5) {
+                            width: 100%;
+                            font-size: 0.9rem;
+                        }
+                    }
+                    .why-actions {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 35px;
+                    }
+                    a {
+                        padding: 14px 14px;
+                        font-size: 0.8rem;
+                        height: 47px;
+                        width: 200px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 0;
+                        border: unset !important;
+                        color: #ffffff;
+                        background-color: transparent;
+                        background-image: radial-gradient(at bottom center, #a8e063 0%, #009578 60%);
+                        border-radius: 12px;
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                    }
+                    .call-us-btn {
+                        border: unset;
+                        outline: unset;
+                        background: unset;
+                        color: #000;
+                        width: auto;
+                        font-weight: 600;
+                        margin-right: 25px;
+                        display: flex;
+                        align-items: center;
+                        svg {
+                            height: 16px;
+                            width: 16px;
+                            fill: #000;
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+            .why-part-img {
+                height: 450px;
+                width: 100%;
+                background: {
+                    image: url(assets/images/why.svg);
+                    position: center center;
+                    size: cover;
+                    repeat: no-repeat;
+                }
+                border-radius: 12px;
+                padding: 50px;
+                display: flex;
+                align-items: center;
+                color: #FFF;
+                .why-part-img-content {
+                    .h3-part {
+                        margin-bottom: 35px;
+                        h3 {
+                            font-size: 3rem;
+                            font-weight: 600;
+                        }
+                        .colred {
+                            color: #e6fd5a; 
+                            font-size: 3.6rem;   
+                        }
+                    }
+                    a {
+                        padding: 14px 14px;
+                        font-size: 0.8rem;
+                        height: 47px;
+                        width: 200px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 0;
+                        border: unset !important;
+                        color: #000;
+                        background: #a8e063;
+                        border-radius: 12px;
+                        font-weight: 600;
+                        letter-spacing: 1px;
+                        margin-top: 35px;
+                    }
+                }
+            }
+        }
+        .why-vision {
+            margin-top: 0;
+            border-right: 1px dashed #CACACA;
+            border-bottom: unset;
+            border-top: unset;
+            border-left: unset;
+            @media (max-width: $max-9) {
+                border: unset;
+            }
+            .why-vision-part {
+                padding: 40px 40px;
+                border-bottom: 1px dashed #CACACA;
+                border-left: unset;
+                margin-right: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @media (max-width: $max-9) {
+                    padding: 30px 15px;
+                }
+                .why-vision-part-text {
+                    flex: 1;
+                }
+                lord-icon {
+                    height: 75px;
+                    width: 75px;
+                    margin-bottom: 0;
+                    margin-left: 15px;
+                }
+                h3 {
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                    @media (max-width: $max-5) {
+                        font-size: 1.1rem;
+                    }
+                }
+                h5 {
+                    font-size: 5rem;
+                    font-family: "num";
+                    position: relative;
+                    margin-bottom: 20px;
+                    &:after {
+                        content: "";
+                        display: inline-block;
+                        position: absolute;
+                        height: 85px;
+                        width: 85px;
+                        background-image: radial-gradient(at bottom center, #009578 0%, #a8e063 60%);
+                        border-radius: 50%;
+                        right: -17px;
+                        top: 5px;
+                        z-index: -1;
+                    }
+                }
+                p {
+                    font-size: 0.9rem;
+                    color: #515151;
+                    font-weight: 500;
+                    margin-bottom: 0;
+                    @media (max-width: $max-5) {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+            .unborded {
+                border: unset;
+            }
+            .cus-padd {
+                padding: 30px;
+            }
+        }
+    }
+   .contact-float {
+        margin: 0 0 75px 0;
+   }
+   .about-nums-section {
+        .about-nums-section-card {
+            background: #FFF;
+            padding: 25px 0;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 12px;
+            h3 {
+                font-size: 4rem;
+                font-weight: 700;
+                font-family: "num";
+                color: #0e3e2f;
+                margin-bottom: -5px;
+                @media (max-width: $max-5) {
+                    font-size: 3rem;
+                }
+            }
+            span {
+                font-size: 0.8rem;
+                font-weight: 700;
+            }
+        }
+   }
+}

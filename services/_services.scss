@@ -1,0 +1,45 @@
+.services-page {
+    .services {
+        background: {
+            image: unset;
+        }
+        .services-container {
+            .service-card {
+                border: 1px solid #f4f4f4;
+                display: flex;
+                justify-content: space-between;
+                .icon {
+                    .icon-container {
+                        lord-icon {
+                            margin-left: 15px;
+                            height: 80px;
+                            width: 80px;
+                        }
+                    }
+                }
+            }
+        }   
+    }
+}
+.one-service {
+    padding: 100px 0;
+}
+
+[lang="en"] {
+    .services-page {
+        .services {
+            .services-container {
+                .service-card {
+                    .icon {
+                        .icon-container {
+                            lord-icon {
+                                margin-right: 15px;
+                                margin-left: unset;
+                            }
+                        }
+                    }
+                }
+            }   
+        }
+    }
+}

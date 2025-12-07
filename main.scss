@@ -176,7 +176,7 @@ a {
     .index-section-header-head {
         span {
             font-size: 0.8rem;
-            color: #4d1f95;
+            color: #a7855a;
             font-weight: 700;
         }
         h3 {
@@ -198,7 +198,7 @@ a {
                 left: 0;
                 width: 100%;
                 height: 2px;
-                background: #4d1f95;
+                background: #a7855a;
             }
         }
     }
@@ -208,7 +208,7 @@ a {
     .index-section-header-head {
         span {
             font-size: 0.8rem;
-            color: #4d1f95;
+            color: #a7855a;
             font-weight: 700;
         }
         h3 {
@@ -232,7 +232,7 @@ a {
                 left: 0;
                 width: 100%;
                 height: 2px;
-                background: #4d1f95;
+                background: #a7855a;
             }
         }
     }
@@ -240,7 +240,22 @@ a {
 
 .services {
     padding: 100px 0 50px 0;
-    background: #FFF;
+    position: relative;
+    .patt1 {
+        position: absolute;
+        left: -301px;
+        top: -704px;
+        transform: translate(0, 0) rotate(45deg);
+        height: 1000px;
+        width: 1000px;
+        filter: grayscale(1);
+        opacity: 0.349;
+        z-index: -1;
+        img {
+            max-width: 100%;
+            height: 100%;
+        }
+    }
     .services-container {
         margin-top: 75px;
         .service-card {
@@ -267,7 +282,7 @@ a {
                     border-radius: 50%;
                     height: 30px;
                     width: 30px;
-                    color: #4d1f95;
+                    color: #a7855a;
                 }
             }
             .service-icon {
@@ -275,13 +290,38 @@ a {
                 svg {
                     height: 50px;
                     width: 50px;
-                    fill: #4d1f95;
+                    fill: #a7855a;
                 }
             }
             .service-info {
                 p {
                     font-size: 0.8rem;
                 }
+            }
+            .service-link {
+                .header-btn {
+                    padding: 10px 0px 10px 32px;
+                    background: transparent;
+                    border-radius: 50px;
+                    width: 211px;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-size: 0.8rem;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    margin-right: 0;
+                    color: #915100;
+                    @media (max-width: $max-5) {
+                        font-size: 0.9rem;
+                    }
+                    svg {
+                        fill: #000;
+                        height: 16px;
+                        width: 16px;
+                    }
+                }   
             }
         }
     }
@@ -305,7 +345,7 @@ a {
             content: "";
             width: 100%;
             height: 100%;
-            background: #54008f;
+            background: #000;
             opacity: 0.45;
             z-index: 0;
             background-repeat: no-repeat;
@@ -486,10 +526,26 @@ a {
         .tes-cards {
             margin-top: 75px;
             .tes-card {
-                background-color: #54008f;
+                background-color: #694c38;
                 padding:  40px 40px;
                 border-radius: 12px;
                 color: #FFF;
+                position: relative;
+                .patt1 {
+                    position: absolute;
+                    right: -323px;
+                    top: -16px;
+                    transform: translate(0, 0) rotate(0);
+                    height: 536px;
+                    width: 676px;
+                    filter: grayscale(1);
+                    opacity: 0.149;
+                    z-index: 1;
+                    img {
+                        max-width: 100%;
+                        height: 100%;
+                    }
+                }
                 .test-scocre {
                     display: inline-flex;
                     align-items: baseline;
@@ -526,7 +582,7 @@ a {
                 .tes-logo-container {
                     position: relative;
                     z-index: 10;
-                    width: 170px;
+                    width: 220px;
                     @media (max-width: $max-12) {
                         width: 150px;
                     }
@@ -549,7 +605,7 @@ a {
                     }
                     span {
                         color: #FFF;
-                        font-size: 0.5rem;
+                        font-size: 0.75rem;
                         margin-right: 8px;
                         font-weight: 200;
                     }
@@ -630,7 +686,7 @@ a {
                     margin: 0;
                 }
                 .q-icon {
-                    color: #4d1f95;
+                    color: #a7855a;
                     margin-right: 8px;
                     margin-top: -20px;
                     font-size: 5rem;
@@ -707,9 +763,9 @@ a {
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #4d1f95 ; 
+    background: #a7855a ; 
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #4d1f95; 
+    background: #a7855a; 
 }

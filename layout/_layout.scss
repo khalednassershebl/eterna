@@ -63,7 +63,7 @@
             .nav-logo-container {
                 position: relative;
                 z-index: 10;
-                width: 170px;
+                width: 190px;
                 @media (max-width: $max-12) {
                     width: 150px;
                 }
@@ -86,7 +86,7 @@
                 }
                 span {
                     color: #FFF;
-                    font-size: 0.5rem;
+                    font-size: 0.75rem;
                     margin-right: 8px;
                     font-weight: 200;
                 }
@@ -333,8 +333,8 @@
         .nav-actions {
             .book-btn {
                 padding: 10px 30px 10px 30px;
-                color: #FFF;
-                background: #FFF;
+                color: #000;
+                background-color: #FFF;
                 border-radius: 50px;
                 width: 200px;
                 text-align: center;
@@ -345,15 +345,15 @@
                 font-weight: 600;
                 letter-spacing: 1px;
                 margin-right: 15px;
-                background: rgba(255, 255, 255, 0.19);
+                // background: rgba(255, 255, 255, 0.19);
                 backdrop-filter: blur(130px);
                 -webkit-backdrop-filter: blur(5px);
-                border: 1px solid rgba(255, 255, 255, 0.15);
+                // border: 1px solid rgba(255, 255, 255, 0.15);
                 svg {
                     height: 18px;
                     width: 18px;
                     margin-right: 8px;
-                    fill: #FFF;
+                    fill: #000;
                 }
                 span {
                     display: inline-block;
@@ -1022,7 +1022,7 @@
 
 
 .index-header {
-    background-image: url(assets/images/hero4.png);
+    background-image: url(assets/images/hero10.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1033,8 +1033,8 @@
         top: 0;
         content: "";
         width: 100%;
-        background: #54008f;
-        opacity: 0.25;
+        background: #000;
+        opacity: 0.35;
         transform: rotatex(180deg);
         z-index: 0;
         background-repeat: no-repeat;
@@ -1114,7 +1114,7 @@
                     height: 18px;
                     position: absolute;
                     left: -130px;
-                    top: 90px;
+                    top: 0;
                     font-weight: 700;
                     span {
                         margin: 0 7px;
@@ -1128,6 +1128,18 @@
                 text-align: right;
                 margin-bottom: 30px;
                 font-family: "q";
+                &:after {
+                    content: "";
+                    mask-image: url(../assets/images/cir.svg);
+                    mask-repeat: no-repeat;
+                    background-color: #a7855a;
+                    width: 221px;
+                    height: 100px;
+                    position: absolute;
+                    right: -44px;
+                    top: 5px;
+                    z-index: -1;
+                }
                 @media(max-width: $max-12) {
                     font-size: 3.5rem;
                 }
@@ -1192,8 +1204,8 @@
             }
             .header-btn {
                 padding: 10px 30px 10px 30px;
-                color: #000;
-                background: #FFF;
+                color: #FFF;
+                background: #a7855a;
                 border-radius: 50px;
                 width: 250px;
                 text-align: center;
@@ -1210,7 +1222,7 @@
                     font-size: 0.9rem;
                 }
                 svg {
-                    fill: #000;
+                    fill: #FFF;
                     height: 16px;
                     width: 16px;
                 }
@@ -1228,6 +1240,12 @@
         @media (max-width: $max-9) {
             display: none !important;
         } 
+    }
+    .vision-logo {
+        width: 150px;
+        position: absolute;
+        left: 60px;
+        bottom: 0px;
     }
 }
 
@@ -1317,6 +1335,23 @@ footer {
         .upper-footer {
             border: 1px solid #ebebeb;
             padding: 30px 40px;
+            position: relative;
+            overflow: hidden;
+            .patt1 {
+                position: absolute;
+                left: 44%;
+                top: -80%;
+                transform: translate(-50%, -35%) rotate(0);
+                height: 536px;
+                width: 676px;
+                filter: grayscale(1);
+                opacity: 0.249;
+                z-index: 1;
+                img {
+                    max-width: 100%;
+                    height: 100%;
+                }
+            }
             .footer-info {
                 display: flex;
                 align-items: center;
@@ -1344,7 +1379,7 @@ footer {
                     .nav-logo-container {
                         position: relative;
                         z-index: 10;
-                        width: 170px;
+                        width: 220px;
                         @media (max-width: $max-12) {
                             width: 150px;
                         }
@@ -1367,7 +1402,7 @@ footer {
                         }
                         span {
                             color: #000;
-                            font-size: 0.5rem;
+                            font-size: 0.75rem;
                             margin-right: 8px;
                             font-weight: 200;
                         }
@@ -1472,7 +1507,7 @@ footer {
                 .footer-btn {
                     padding: 10px 30px 10px 30px;
                     color: #FFF;
-                    background: #000;
+                    background: #694c38;
                     border-radius: 50px;
                     width: 250px;
                     text-align: center;
@@ -1504,12 +1539,12 @@ footer {
                     width: 99%;
                     border-bottom: 1px solid #ebebeb;
                     &:active {
-                        border-bottom: 1px solid #4d1f95;
+                        border-bottom: 1px solid #a7855a;
                         box-shadow: none;
                         outline: none;
                     }
                     &:focus {
-                        border-bottom: 1px solid #4d1f95;
+                        border-bottom: 1px solid #a7855a;
                         box-shadow: none;
                         outline: none;
                     }
@@ -1554,7 +1589,7 @@ footer {
                 margin: 0;
                 span {
                     margin: 0 5px;
-                    color: #4d1f95;
+                    color: #a7855a;
                 }
             }
             ul {
